@@ -15,8 +15,8 @@ A self-hosted Discord support ticket bot with a full-featured web dashboard. Mem
 </p>
 
 <p align="center">
-  <img src="guilds-settings.png" width="440" alt="Guild Settings">
-  <img src="guilds-settings-2.png" width="440" alt="Guild Settings Continued">
+  <img src="guild-settings.png" width="440" alt="Guild Settings">
+  <img src="guild-settings-2.png" width="440" alt="Guild Settings Continued">
 </p>
 
 <p align="center">
