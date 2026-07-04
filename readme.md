@@ -150,6 +150,7 @@ I maintain a dedicated demo Discord server where you can experience the complete
 If you'd like to test the bot or purchase the source code, send me a direct message on Discord.
 
 > **Discord:** `Notcyy_`
+> **Discord server:** https://discord.gg/HmRj6JsJg
 
 ### Accepted Payment Methods
 
