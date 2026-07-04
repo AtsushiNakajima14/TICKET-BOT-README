@@ -3,18 +3,29 @@
 A self-hosted Discord support ticket bot with a full-featured web dashboard. Members open tickets inside Discord; staff manage, claim, and close them — all activity is logged, rated, and reviewable through a real-time admin panel.
 
 ---
+<h2 align="center">📸 SAMPLES</h2>
+
 <p align="center">
-  <img src="login.png" width="900">
+  <img src="login.png" width="900" alt="Discord OAuth Login">
 </p>
 
 <p align="center">
-  <img src="dashboard.png" width="440">
-  <img src="guilds.png" width="440">
-  <img src="guilds-settings.png" width="440">
-  <img src="guilds-settings-2.png" width="440">
-  <img src="ban.png" width="440">
-  <img src="ratings.png" width="440">
-  <img src="bot-setup.png" width="440">
+  <img src="dashboard.png" width="440" alt="Dashboard">
+  <img src="guilds.png" width="440" alt="Servers">
+</p>
+
+<p align="center">
+  <img src="guilds-settings.png" width="440" alt="Guild Settings">
+  <img src="guilds-settings-2.png" width="440" alt="Guild Settings Continued">
+</p>
+
+<p align="center">
+  <img src="ban.png" width="440" alt="Ban Management">
+  <img src="ratings.png" width="440" alt="Ratings">
+</p>
+
+<p align="center">
+  <img src="bot-setup.png" width="900" alt="Bot Setup Wizard">
 </p>
 
 ## ✨ Features
