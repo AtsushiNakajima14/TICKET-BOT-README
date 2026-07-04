@@ -130,90 +130,33 @@ BOT_OWNER_ID=your_discord_user_id
 # Optional — log verbosity: trace | debug | info | warn | error (default: info)
 LOG_LEVEL=info
 ```
-
 ---
 
-## 🚀 Local Development
+# 🛒 Purchase & Live Demo
 
-### 1. Install dependencies
-```bash
-pnpm install
-```
+Interested in purchasing the source code or trying it before buying?
 
-### 2. Push the database schema
-```bash
-pnpm --filter @workspace/db run push
-```
+I maintain a dedicated demo Discord server where you can experience the complete ticket workflow, including:
 
-This creates all required tables in your PostgreSQL database.
+- Creating tickets
+- Category selection
+- Verification system
+- Staff claiming and closing tickets
+- Ticket ratings
+- Live dashboard synchronization
+- Guild configuration
+- Ticket management from the web dashboard
 
-### 3. Start the API server (includes the Discord bot)
-```bash
-PORT=5000 pnpm --filter @workspace/api-server run dev
-```
+If you'd like to test the bot or purchase the source code, send me a direct message on Discord.
 
-The server starts on **port 5000** and serves:
-- REST API at `/api/`
-- Dashboard static files in production
+> **Discord:** `Notcyy_`
 
-### 4. Start the dashboard (separate terminal)
-```bash
-PORT=23183 pnpm --filter @workspace/dashboard run dev
-```
+### Accepted Payment Methods
 
-The dashboard dev server starts on **port 23183** with hot reload.
+- PayPal
+- GCash
 
-Open **http://localhost:23183** in your browser and sign in with Discord.
-
----
-
-## 🏗 Production Deployment
-
-### Option A — Render (one-click, recommended)
-
-A `render.yaml` is included. Click the button below or follow the steps manually.
-
-1. Fork / upload this repo to GitHub.
-2. Create a new **Web Service** on [render.com](https://render.com) pointing to the repo.
-3. Render will auto-detect `render.yaml` and configure the build and start commands.
-4. Set all environment variables from the table above in the Render dashboard under **Environment**.
-5. Deploy — Render handles installs, schema push, and build automatically.
-
-The build command (handled automatically by `render.yaml`):
-```bash
-pnpm install --no-frozen-lockfile
-pnpm --filter @workspace/db run push-force
-pnpm --filter @workspace/api-server run build
-PORT=3000 BASE_PATH=/ pnpm --filter @workspace/dashboard run build
-```
-
-Start command:
-```bash
-node --enable-source-maps artifacts/api-server/dist/index.mjs
-```
-
-### Option B — Any Linux VPS / server
-
-```bash
-# 1. Install dependencies
-pnpm install --frozen-lockfile
-
-# 2. Push DB schema
-pnpm --filter @workspace/db run push-force
-
-# 3. Build dashboard
-PORT=3000 BASE_PATH=/ pnpm --filter @workspace/dashboard run build
-
-# 4. Build API server
-pnpm --filter @workspace/api-server run build
-
-# 5. Run
-node --enable-source-maps artifacts/api-server/dist/index.mjs
-```
-
-Use **PM2**, **systemd**, or similar to keep the process alive.
-
-> **Note:** In production, the Express server serves the pre-built React dashboard as static files — you only need one process and one port.
+> Demo access is provided for evaluation purposes only and may be limited to genuine buyers.
 
 ---
 
