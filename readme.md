@@ -14,7 +14,7 @@ A self-hosted Discord support ticket bot with a full-featured web dashboard. Mem
   <img src="guilds-settings-2.png" width="440">
   <img src="ban.png" width="440">
   <img src="ratings.png" width="440">
-  <img src"bot-setup.png" width="440">
+  <img src="bot-setup.png" width="440">
 </p>
 
 ## ✨ Features
